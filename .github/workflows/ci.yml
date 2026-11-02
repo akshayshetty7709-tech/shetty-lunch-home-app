@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Trivy filesystem scan (dependencies, secrets, Dockerfile misconfig)
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@0.36.0
         continue-on-error: true # report-only for practice; set exit-code '1' and remove this line to block builds
         with:
           scan-type: fs
